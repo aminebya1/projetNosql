@@ -1,23 +1,25 @@
-// models/discussion.js
+// models/Discussion.js
 const mongoose = require('mongoose');
 
 const discussionSchema = new mongoose.Schema({
-    content: String,
-    group: { type: mongoose.Schema.Types.ObjectId, ref: 'Group' },
-    event: { type: mongoose.Schema.Types.ObjectId, ref: 'Event' },
-    creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-    messages: [
-        {
-            content: String,
-            creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-            comments: [
-                {
-                    content: String,
-                    creator: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-                }
-            ],
-        }
-    ],
+    title: {
+        type: String,
+        required: true
+    },
+    linkedToGroup: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Group',
+        default: null
+    },
+    linkedToEvent: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Event',
+        default: null
+    },
+    messages: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Message'
+    }]
 });
 
 module.exports = mongoose.model('Discussion', discussionSchema);

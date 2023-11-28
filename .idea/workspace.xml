@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="05834ffb-1ebc-41cc-adbd-d40acd9e3fed" name="Changes" comment="" />
+    <list default="true" id="05834ffb-1ebc-41cc-adbd-d40acd9e3fed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/models/album.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/album.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/discussions.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/groups.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/groups.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/users.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/users.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/discussion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/discussion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/event.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/photoAlbum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/discussions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/events.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/photoAlbums.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,18 +44,25 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/amine/OneDrive/Desktop/Cours/Facebook_api",
+    "last_opened_file_path": "C:/Users/amine/Desktop/projetNosql/src/routes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\amine\\AppData\\Local\\JetBrains\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amine\Desktop\projetNosql\src\routes" />
+      <recent name="C:\Users\amine\Desktop\projetNosql\src\controllers" />
       <recent name="C:\Users\amine\OneDrive\Desktop\Cours\Facebook_api" />
       <recent name="C:\Users\amine\OneDrive\Desktop\Cours\Facebook_api\src\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amine\Desktop\projetNosql\src\models" />
       <recent name="C:\Users\amine\OneDrive\Desktop\Cours\Facebook_api\src" />
     </key>
   </component>
@@ -51,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701097260159</updated>
       <workItem from="1701097261507" duration="3607000" />
+      <workItem from="1701125556568" duration="7180000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 // controllers/GroupController.js
-const Group = require('../models/Group');
-const User = require('../models/User');
+const Group = require('../models/group');
+const User = require('../models/user');
 
 exports.createGroup = async (req, res) => {
     try {

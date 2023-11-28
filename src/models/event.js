@@ -1,16 +1,31 @@
-// models/event.js
+// models/Event.js
 const mongoose = require('mongoose');
 
 const eventSchema = new mongoose.Schema({
-    name: String,
+    name: {
+        type: String,
+        required: true
+    },
     description: String,
-    startDate: Date,
+    startDate: {
+        type: Date,
+        required: true
+    },
     endDate: Date,
     location: String,
     coverPhoto: String,
-    private: Boolean,
-    organizers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
-    members: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
+    isPrivate: {
+        type: Boolean,
+        default: false
+    },
+    organizers: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }],
+    members: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    }]
 });
 
 module.exports = mongoose.model('Event', eventSchema);
