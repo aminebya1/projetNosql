@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05834ffb-1ebc-41cc-adbd-d40acd9e3fed" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/models/album.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/album.route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/discussions.route.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/groups.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/groups.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/users.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/users.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/discussion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/discussion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/event.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/photoAlbum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/discussions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/events.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/photoAlbums.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/message.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/album.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/album.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/discussions.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/discussions.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/events.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/events.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/groups.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/groups.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/photo.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/photo.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/question.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/question.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/sondage.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/sondage.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/ticket.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ticket.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/ticketType.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/ticketType.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/users.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/amine/Desktop/projetNosql/src/routes",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\amine\\AppData\\Local\\JetBrains\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amine/OneDrive/Desktop/projetNosql&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\amine\\AppData\\Local\\JetBrains\\WebStorm 2022.3.2\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\amine\Desktop\projetNosql\src\routes" />
@@ -76,6 +76,8 @@
       <updated>1701097260159</updated>
       <workItem from="1701097261507" duration="3607000" />
       <workItem from="1701125556568" duration="7180000" />
+      <workItem from="1701160527993" duration="1737000" />
+      <workItem from="1701162324662" duration="161000" />
     </task>
     <servers />
   </component>

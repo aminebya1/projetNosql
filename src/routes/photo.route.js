@@ -3,10 +3,10 @@ const express = require('express');
 const PhotoController = require('../controllers/photo.controller');
 const router = express.Router();
 
-router.post('/photos', PhotoController.createPhoto);
-router.get('/photos', PhotoController.getAllPhotos);
-router.get('/photos/:id', PhotoController.getPhotoById);
-router.patch('/photos/:id', PhotoController.updatePhoto);
-router.delete('/photos/:id', PhotoController.deletePhoto);
+router.post('', PhotoController.createPhoto);
+router.get('', PhotoController.getAllPhotos);
+router.get('/:id', PhotoController.getPhotoById);
+router.put('/:id', PhotoController.updatePhoto);
+router.delete('/:id', PhotoController.deletePhoto);
 
 module.exports = router;
