@@ -20,6 +20,7 @@ exports.getAllAlbums = async (req, res) => {
     }
 };
 
+// Récupérer un album via l'ID
 exports.getAlbumById = async (req, res) => {
     try {
         const album = await Album.findById(req.params.id).populate('photos');
@@ -32,6 +33,8 @@ exports.getAlbumById = async (req, res) => {
     }
 };
 
+
+// Update les valeurs d'un album
 exports.updateAlbum = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -47,6 +50,8 @@ exports.updateAlbum = async (req, res) => {
     }
 };
 
+
+// Supprimer un album
 exports.deleteAlbum = async (req, res) => {
     try {
         const album = await Album.findByIdAndDelete(req.params.id);

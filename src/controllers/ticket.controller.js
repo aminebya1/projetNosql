@@ -1,6 +1,7 @@
 // controllers/TicketController.js
 const Ticket = require('../models/ticket');
 
+// crée un ticket
 exports.createTicket = async (req, res) => {
     try {
         const ticket = new Ticket(req.body);
@@ -11,6 +12,7 @@ exports.createTicket = async (req, res) => {
     }
 };
 
+// Récuperer tout les tickets
 exports.getAllTickets = async (req, res) => {
     try {
         const tickets = await Ticket.find({}).populate('ticketType');
@@ -20,6 +22,7 @@ exports.getAllTickets = async (req, res) => {
     }
 };
 
+// Récuperer un ticket via l'iD
 exports.getTicketById = async (req, res) => {
     try {
         const ticket = await Ticket.findById(req.params.id).populate('ticketType');
@@ -32,6 +35,7 @@ exports.getTicketById = async (req, res) => {
     }
 };
 
+// Update un ticket via l'iD
 exports.updateTicket = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -46,7 +50,7 @@ exports.updateTicket = async (req, res) => {
         res.status(400).send(error);
     }
 };
-
+// Delete un ticket
 exports.deleteTicket = async (req, res) => {
     try {
         const ticket = await Ticket.findByIdAndDelete(req.params.id);

@@ -2,6 +2,7 @@
 const Group = require('../models/group');
 const User = require('../models/user');
 
+// Crée un groupe
 exports.createGroup = async (req, res) => {
     try {
         const group = new Group(req.body);
@@ -12,6 +13,7 @@ exports.createGroup = async (req, res) => {
     }
 };
 
+// Récuperer tout les gorupes 
 exports.getAllGroups = async (req, res) => {
     try {
         const groups = await Group.find({});
@@ -21,6 +23,7 @@ exports.getAllGroups = async (req, res) => {
     }
 };
 
+// Récuperer un groupe via l'iD
 exports.getGroupById = async (req, res) => {
     try {
         const group = await Group.findById(req.params.id);
@@ -33,6 +36,7 @@ exports.getGroupById = async (req, res) => {
     }
 };
 
+// Update un groupe 
 exports.updateGroup = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -48,6 +52,7 @@ exports.updateGroup = async (req, res) => {
     }
 };
 
+// Supprimer un groupe
 exports.deleteGroup = async (req, res) => {
     try {
         const group = await Group.findByIdAndDelete(req.params.id);

@@ -1,6 +1,7 @@
 // controllers/SondageController.js
 const Sondage = require('../models/sondage');
 
+// Crée un sondage
 exports.createSondage = async (req, res) => {
     try {
         const sondage = new Sondage({ ...req.body });
@@ -11,6 +12,7 @@ exports.createSondage = async (req, res) => {
     }
 };
 
+// Récuperer un sondage
 exports.getAllSondages = async (req, res) => {
     try {
         const sondages = await Sondage.find({}).populate('questions');
@@ -20,6 +22,7 @@ exports.getAllSondages = async (req, res) => {
     }
 };
 
+// Récuperer un sondage via l'iD
 exports.getSondageById = async (req, res) => {
     try {
         const sondage = await Sondage.findById(req.params.id).populate('questions');
@@ -32,6 +35,7 @@ exports.getSondageById = async (req, res) => {
     }
 };
 
+// Update un sondage
 exports.updateSondage = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -47,6 +51,7 @@ exports.updateSondage = async (req, res) => {
     }
 };
 
+// Delete un sondage
 exports.deleteSondage = async (req, res) => {
     try {
         const sondage = await Sondage.findByIdAndDelete(req.params.id);

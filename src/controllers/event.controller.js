@@ -1,6 +1,7 @@
 // controllers/EventController.js
 const Event = require('../models/event');
 
+// Crée un event
 exports.createEvent = async (req, res) => {
     try {
         const event = new Event(req.body);
@@ -11,6 +12,7 @@ exports.createEvent = async (req, res) => {
     }
 };
 
+// Récuperer tout les événements 
 exports.getAllEvents = async (req, res) => {
     try {
         const events = await Event.find({});
@@ -20,6 +22,7 @@ exports.getAllEvents = async (req, res) => {
     }
 };
 
+// Récuperer un event via l'iD
 exports.getEventById = async (req, res) => {
     try {
         const event = await Event.findById(req.params.id);
@@ -32,6 +35,7 @@ exports.getEventById = async (req, res) => {
     }
 };
 
+// Update un event
 exports.updateEvent = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -47,6 +51,7 @@ exports.updateEvent = async (req, res) => {
     }
 };
 
+// Supprimer un event
 exports.deleteEvent = async (req, res) => {
     try {
         const event = await Event.findByIdAndDelete(req.params.id);

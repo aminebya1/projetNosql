@@ -1,6 +1,8 @@
 // controllers/QuestionController.js
 const Question = require('../models/question');
 
+
+// Crée une questions pour le sondage
 exports.createQuestion = async (req, res) => {
     try {
         const question = new Question({ ...req.body });
@@ -11,6 +13,7 @@ exports.createQuestion = async (req, res) => {
     }
 };
 
+// Récuperer toutes les questions
 exports.getAllQuestions = async (req, res) => {
     try {
         const questions = await Question.find({});
@@ -20,6 +23,7 @@ exports.getAllQuestions = async (req, res) => {
     }
 };
 
+// Récuperer une question via l'iD
 exports.getQuestionById = async (req, res) => {
     try {
         const question = await Question.findById(req.params.id);
@@ -32,6 +36,7 @@ exports.getQuestionById = async (req, res) => {
     }
 };
 
+// Update une question
 exports.updateQuestion = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -47,6 +52,7 @@ exports.updateQuestion = async (req, res) => {
     }
 };
 
+// Delete une question
 exports.deleteQuestion = async (req, res) => {
     try {
         const question = await Question.findByIdAndDelete(req.params.id);

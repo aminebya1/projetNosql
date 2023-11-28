@@ -1,6 +1,7 @@
 // controllers/TicketTypeController.js
 const TicketType = require('../models/ticketType');
 
+// Crée un type de ticket
 exports.createTicketType = async (req, res) => {
     try {
         const ticketType = new TicketType(req.body);
@@ -11,6 +12,7 @@ exports.createTicketType = async (req, res) => {
     }
 };
 
+// Récuperer les types de tickets 
 exports.getAllTicketTypes = async (req, res) => {
     try {
         const ticketTypes = await TicketType.find({});
@@ -20,6 +22,7 @@ exports.getAllTicketTypes = async (req, res) => {
     }
 };
 
+// Récuperer le type via l'iD 
 exports.getTicketTypeById = async (req, res) => {
     try {
         const ticketType = await TicketType.findById(req.params.id);
@@ -32,6 +35,7 @@ exports.getTicketTypeById = async (req, res) => {
     }
 };
 
+// Update un type de ticket
 exports.updateTicketType = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -47,6 +51,8 @@ exports.updateTicketType = async (req, res) => {
     }
 };
 
+
+// Delete un ticket
 exports.deleteTicketType = async (req, res) => {
     try {
         const ticketType = await TicketType.findByIdAndDelete(req.params.id);

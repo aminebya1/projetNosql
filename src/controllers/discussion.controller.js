@@ -2,6 +2,7 @@
 const Discussion = require('../models/discussion');
 const Message = require('../models/message');
 
+// Crée un fil de discussions
 exports.createDiscussion = async (req, res) => {
     try {
         const discussion = new Discussion(req.body);
@@ -12,6 +13,7 @@ exports.createDiscussion = async (req, res) => {
     }
 };
 
+// Récupérer toutes les dicussions de la collections
 exports.getAllDiscussions = async (req, res) => {
     try {
         const discussions = await Discussion.find({}).populate('messages');
@@ -21,6 +23,7 @@ exports.getAllDiscussions = async (req, res) => {
     }
 };
 
+// Récuperer une discussion via l'iD
 exports.getDiscussionById = async (req, res) => {
     try {
         const discussion = await Discussion.findById(req.params.id).populate('messages');
@@ -33,6 +36,8 @@ exports.getDiscussionById = async (req, res) => {
     }
 };
 
+
+// Update un fil de discussion
 exports.updateDiscussion = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -48,6 +53,7 @@ exports.updateDiscussion = async (req, res) => {
     }
 };
 
+// Delete une discussion de la collection
 exports.deleteDiscussion = async (req, res) => {
     try {
         const discussion = await Discussion.findByIdAndDelete(req.params.id);

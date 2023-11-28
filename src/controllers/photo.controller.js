@@ -1,6 +1,7 @@
 // controllers/PhotoController.js
 const Photo = require('../models/photo');
 
+// Crée un photo
 exports.createPhoto = async (req, res) => {
     try {
         const photo = new Photo({ ...req.body });
@@ -11,6 +12,7 @@ exports.createPhoto = async (req, res) => {
     }
 };
 
+// Récuperer toutes les photos 
 exports.getAllPhotos = async (req, res) => {
     try {
         const photos = await Photo.find({});
@@ -20,6 +22,7 @@ exports.getAllPhotos = async (req, res) => {
     }
 };
 
+// Récuperer une photo via l'ID
 exports.getPhotoById = async (req, res) => {
     try {
         const photo = await Photo.findById(req.params.id);
@@ -32,6 +35,7 @@ exports.getPhotoById = async (req, res) => {
     }
 };
 
+// Update une phot
 exports.updatePhoto = async (req, res) => {
     const updates = Object.keys(req.body);
     try {
@@ -47,6 +51,7 @@ exports.updatePhoto = async (req, res) => {
     }
 };
 
+// Delete une phots
 exports.deletePhoto = async (req, res) => {
     try {
         const photo = await Photo.findByIdAndDelete(req.params.id);
