@@ -10,7 +10,7 @@ exports.createAlbum = async (req, res) => {
         res.status(400).send(error);
     }
 };
-
+// Récupérer tout les albums de la collections
 exports.getAllAlbums = async (req, res) => {
     try {
         const albums = await Album.find({}).populate('photos');
